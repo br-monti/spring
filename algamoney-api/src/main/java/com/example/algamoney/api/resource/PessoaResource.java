@@ -1,6 +1,5 @@
 package com.example.algamoney.api.resource;
 
-import java.net.URI;
 import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.example.algamoney.api.event.listener.RecursoCriadoEvent;
 import com.example.algamoney.api.model.Pessoa;
@@ -36,7 +34,7 @@ public class PessoaResource {
 	@Autowired
 	private PessoaService pessoaService;
 	
-		@Autowired
+	@Autowired
 	private ApplicationEventPublisher publisher;
 	
 	@GetMapping
