@@ -6,6 +6,6 @@ import com.example.algamoney.api.model.Lancamento;
 
 
 
-public interface LancamentoRespository extends JpaRepository<Lancamento, Long> {
+public interface LancamentoRepository extends JpaRepository<Lancamento, Long> {
 
 }
